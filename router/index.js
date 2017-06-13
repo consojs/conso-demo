@@ -1,23 +1,23 @@
 let {Router} = require('conso');
 let router = new Router();
 
-@router.route('/home')
+@router.route('/')
 class Index {
     constructor() {
     }
 
-    @router.get('/test1')
+    @router.get('/')
     test1(req, res, next) {
         console.log(req.get);
-        res.render('index', {title: 'tyut'});
+        res.render('index', {title: 'Conso'});
     }
 
-    @router.get('/tes2')
+    @router.get('/test2')
     test2(req, res, next) {
         res.json({data: 'this is a json'});
     }
 
-    @router.post('/tes3')
+    @router.post('/test3')
     test3(req, res, next) {
         console.log('router:');
         console.log(req.body);
