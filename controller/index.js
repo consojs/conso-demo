@@ -6,7 +6,7 @@ let {route, get, post, resource} = Annotation;
 @route('/home')
 class Index {
 
-    @resource
+    @resource(User)
     user;
 
     @get('/test1')
