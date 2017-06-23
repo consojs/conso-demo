@@ -11,9 +11,14 @@ module.exports = {
         cache: false
     },
     dbConfig: {
+        client: 'mysql',
         host: "localhost",
-        port: 5984,
-        dbName: "customers"
+        port: 3306,
+        dbName: "customers",
+        author: {
+            username: 'admin',
+            password: 'password'
+        }
     },
     annotations: {
         enable: false,
