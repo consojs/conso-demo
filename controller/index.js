@@ -14,7 +14,7 @@ class index {
         console.log(this.user.name);
         // ctx.render('index', {title: 'conso'});
         ctx.end('qweqwe')
-        ctx.redirect('https://baidu.com');
+        // ctx.redirect('https://baidu.com');
     }
 
     @get('/test2')
