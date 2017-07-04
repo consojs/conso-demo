@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/tageecc/conso-demo#readme",
   "dependencies": {
-    "conso": "0.0.7",
+    "conso": "0.0.8",
+    "delegates": "^1.0.0",
     "handlebars": "^4.0.10"
   }
 }
