@@ -12,8 +12,8 @@ class index {
     @get('/test1')
     test1(ctx, next) {
         console.log(this.user.name);
-        // ctx.render('index', {title: 'conso'});
-        ctx.end('qweqwe')
+        ctx.render('index', {title: 'conso'});
+        // ctx.end('qweqwe')
         // ctx.redirect('https://baidu.com');
     }
 

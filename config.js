@@ -5,10 +5,13 @@ module.exports = {
     publicDir: "./public",
     encoding: "utf8",
     view: {
-        name: "handlebars",
-        ext: ".hbs",
-        baseDir: "./view",
-        cache: false
+        engine: "ejs",
+        ext: ".ejs",
+        dir: "./view",
+        cache: true,
+        option:{
+            delimiter:'%'
+        }
     },
     dbConfig: {
         client: 'mysql',

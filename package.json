@@ -19,6 +19,8 @@
   "dependencies": {
     "conso": "0.0.8",
     "delegates": "^1.0.0",
-    "handlebars": "^4.0.10"
+    "ejs": "^2.5.6",
+    "handlebars": "^4.0.10",
+    "jade": "^1.11.0"
   }
 }
