@@ -11,15 +11,17 @@ class index {
 
     @get('/test1')
     test1(ctx, next) {
-        console.log(this.user.name);
+        console.log(ctx.db)
+        ctx.db.find({id:1});
+        console.log()
         ctx.render('index', {title: 'conso'});
-        // ctx.end('qweqwe')
-        // ctx.redirect('https://baidu.com');
     }
 
     @get('/test2')
     test2(ctx, next) {
         ctx.jsonp({username: this.user.name});
+        // ctx.end('qweqwe')
+        // ctx.redirect('https://baidu.com');
     }
 
     @get('/test3')

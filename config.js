@@ -13,14 +13,14 @@ module.exports = {
             delimiter:'%'
         }
     },
-    dbConfig: {
+    DBConfig: {
         client: 'mysql',
-        host: "localhost",
-        port: 3306,
-        dbName: "customers",
-        author: {
-            username: 'admin',
-            password: 'password'
+        connection: {
+            host: '123.45.67.890',
+            port: 3306,
+            user: 'ubuntu',
+            password: 'welcome1234',
+            database: 'db1'
         }
     },
     annotations: {
