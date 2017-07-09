@@ -9,18 +9,19 @@ module.exports = {
         ext: ".ejs",
         dir: "./view",
         cache: true,
-        option:{
-            delimiter:'%'
+        option: {
+            delimiter: '%'
         }
     },
     DBConfig: {
         client: 'mysql',
-        connection: {
-            host: '123.45.67.890',
+        config: {
+            host: '127.0.0.1',
             port: 3306,
-            user: 'ubuntu',
-            password: 'welcome1234',
-            database: 'db1'
+            username: 'root',
+            password: 'zzxzzx',
+            database: 'db1',
+            // pool: true // optional for use pool directly
         }
     },
     annotations: {

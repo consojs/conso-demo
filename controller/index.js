@@ -1,19 +1,26 @@
 let {Annotation} = require('conso');
 let User = require('../module/User');
 
-let {route, get, post, resource} = Annotation;
+let {route, get, post, model} = Annotation;
 
 @route('/home')
 class index {
 
-    @resource(User, '张三')
+    @model(User)
     user;
 
     @get('/test1')
-    test1(ctx, next) {
-        console.log(ctx.db)
-        ctx.db.find({id:1});
-        console.log()
+    async test1(ctx, next) {
+
+        let message = {
+            username: 'tianzi',
+            password: '654321',
+            birthday: '1995-02-03',
+            // address: 'shenzhen'
+        };
+        //创建
+        let msg = await this.user.create(message);
+        console.log(msg);
         ctx.render('index', {title: 'conso'});
     }
 
