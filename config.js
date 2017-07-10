@@ -14,13 +14,13 @@ module.exports = {
         }
     },
     DBConfig: {
-        client: 'mysql',
+        client: 'mongo',
         config: {
             host: '127.0.0.1',
-            port: 3306,
-            username: 'root',
-            password: 'zzxzzx',
-            database: 'db1',
+            port: 27017,
+            // user: 'root',
+            // password: 'zzxzzx',
+            database: 'conso_demo',
             // pool: true // optional for use pool directly
         }
     },
