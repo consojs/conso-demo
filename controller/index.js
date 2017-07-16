@@ -11,7 +11,8 @@ class index {
 
     @get('/test1')
     async test1(ctx, next) {
-        ctx.file('F:/project/conso-demo/controller/index.js');
+        // ctx.file('F:/project/conso-demo/controller/index.js');
+        ctx.render('index',{title:'123'});
     }
 
     @get('/test2')

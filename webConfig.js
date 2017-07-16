@@ -2,13 +2,13 @@ module.exports = {
     project: "conso",
     host: "localhost",
     port: 3000,
-    publicDir: "./public",
+    public: "./public",
     encoding: "utf8",
     view: {
         engine: "ejs",
         ext: ".ejs",
         dir: "./view",
-        cache: true,
+        cache: false,
         option: {
             delimiter: '%'
         }
@@ -25,7 +25,7 @@ module.exports = {
         }
     },
     annotations: {
-        enable: false,
+        enable: true,
         basePackage: "./controller"
     }
 };
