@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -30,7 +32,9 @@
     "koa-morgan": "^1.0.1",
     "mysql": "^2.13.0",
     "sails-mongo": "^0.12.2",
-    "sails-mysql": "^0.11.5",
-    "waterline": "^0.11.11"
-  }
+    "sails-mysql": "^1.0.0",
+    "waterline": "^0.13.1",
+    "snyk": "^1.88.1"
+  },
+  "snyk": true
 }
